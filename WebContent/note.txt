@@ -1,0 +1,3 @@
+X-adminV2.0中的layui默认是layui-v2.0.2
+
+现在修改为：layui-v2.2.5
