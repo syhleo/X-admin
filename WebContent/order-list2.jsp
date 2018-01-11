@@ -20,11 +20,13 @@
       <script src="https://cdn.staticfile.org/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 <style>
-
+#order_list .layui-table-cell{
+	font-size:14px;
+}
 </style>    
     
 </head>
-<body>
+<body id="order_list">
 	<table class="layui-hide" id="test" lay-filter="demo"></table>
 	<script type="text/html" id="barDemo">
 		<a class="layui-btn layui-btn-primary layui-btn-xs" lay-event="detail">查看</a>
@@ -59,7 +61,7 @@
 					page:true, //开启分页
 					cols:[
 						[// 表头
-						 	{field:"id",title:"ID",sort:true,fixed:"left"},
+						 	{field:"id",title:"ID",style:"background-color: #5FB878; color: #fff;",sort:true,fixed:"left"},
 						 	{field:"username",title:"用户名"},
 						 	{field:"sex",title:"性别",sort:true},
 						 	{field: 'city', title: '城市'}, 
